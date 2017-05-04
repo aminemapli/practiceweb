@@ -128,7 +128,7 @@ header {
 #slider ul li a:hover {
     background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .11));
     background: linear-gradient(to top, rgba(255, 255, 255, .5), rgba(255, 255, 255, .11));
-    color: #E27C2A;
+    color: #584a4a;
     width: 100%;
     height: 100%;
     -webkit-transition: all .5s ease-in-out;
@@ -148,7 +148,7 @@ header {
 #slider > a i:hover {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
-    color: #726E95;
+    color: #584a4a;
 }
 
 
@@ -299,7 +299,7 @@ header {
 
 #skills #pro_holder .scholder .progress {
     height: 35px;
-    border: solid 2px #E27C2B;
+    border: solid 2px rgba(45, 33, 35, 0.44);
     overflow: hidden;
     margin: 10px 0;
     background: rgba(221, 221, 221, 0.45);
@@ -307,8 +307,8 @@ header {
 }
 
 #skills #pro_holder .scholder .progress div {
-    background: -webkit-linear-gradient(left, rgba(114, 110, 149, 1), rgba(114, 110, 149, 0.55));
-    background: linear-gradient(to right, rgba(114, 110, 149, 1), rgba(114, 110, 149, 0.55));
+    background: -webkit-linear-gradient(left, rgb(33, 23, 24), rgba(49, 37, 37, 0.45));
+    background: linear-gradient(to right, rgb(33, 23, 24), rgba(49, 37, 37, 0.45));
     height: 100%;
     text-align: right;
     padding: 8px 4px 0px 0px;
@@ -494,8 +494,15 @@ figcaption {
     padding: 40px 0;
     background: #2D2123;
     color: #fff;
+    text-align: center;
 }
-
+#contact h2 {
+	font-size: 48px;
+	text-shadow: 2px 2px 15px #000;
+	margin: 0;
+	position: relative;
+	bottom: 15px;
+}
 #contact form {
     display: -webkit-box;
     display: -ms-flexbox;
