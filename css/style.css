@@ -125,7 +125,7 @@ header {
     visibility: visible;
 }
 
-#slider ul li a:hover {  
+#slider ul li a:hover {
     width: 100%;
     height: 100%;
     -webkit-transition: all .5s ease-in-out;
@@ -137,15 +137,24 @@ header {
     font-size: 34px;
     position: absolute;
     bottom: 6px;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
     text-shadow: -4px 4px 5px #000;
+    animation-name: down;
+    animation-duration: .7s;
+    animation-delay: .5s;
+    animation-iteration-count: 12;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
 }
 
-#slider > a i:hover {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-    color: #584a4a;
+@keyframes down {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        color: #554848;
+        transform: translateY(6px);
+    }
 }
 
 
@@ -180,7 +189,7 @@ header {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     padding: 4px;
-		background: rgb(49, 37, 37);
+    background: rgb(49, 37, 37);
 }
 
 #about img:hover {
@@ -493,13 +502,15 @@ figcaption {
     color: #fff;
     text-align: center;
 }
+
 #contact h2 {
-	font-size: 48px;
-	text-shadow: 2px 2px 15px #000;
-	margin: 0;
-	position: relative;
-	bottom: 15px;
+    font-size: 48px;
+    text-shadow: 2px 2px 15px #000;
+    margin: 0;
+    position: relative;
+    bottom: 15px;
 }
+
 #contact form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -530,7 +541,7 @@ figcaption {
 #contact form input {
     height: 45px;
     font-size: 18px;
-  /*  replaced with shadow
+    /*  replaced with shadow
     border-bottom: solid 4px #2D2123, ;
     border-top: solid 4px #2D2123, ; */
     border-radius: 5px;
@@ -546,7 +557,7 @@ figcaption {
     font-size: 18px;
     height: 150px;
     resize: none;
-  /*  replaced with shadow
+    /*  replaced with shadow
     border-bottom: solid 4px #2D2123, ;
     border-right: solid 4px #2D2123, ;
     border-left: solid 4px #2D2123, ; */
@@ -643,4 +654,3 @@ footer #msg span a {
 
 
 /*footer end*/
-
